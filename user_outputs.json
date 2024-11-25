@@ -1,0 +1,593 @@
+{
+    "ceph_version": "19.2.0-12",
+    "outputs": [
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d --rgw-realm india --system on 10.0.195.146",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "21e86bce636c3aa0",
+                        "secret_key": "cf764951f1fdde5d",
+                        "active": true,
+                        "create_date": "2024-10-11T07:53:43.409416Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-11T07:53:43.409404Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key 3way123 --secret 3way123 --rgw-realm india --system on 10.0.195.55",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "3way123",
+                        "secret_key": "3way123",
+                        "active": true,
+                        "create_date": "2024-10-11T08:03:56.602925Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-11T08:03:56.602910Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d --rgw-realm india --system on 10.0.195.62",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "21e86bce636c3aa0",
+                        "secret_key": "cf764951f1fdde5d",
+                        "active": true,
+                        "create_date": "2024-10-11T11:48:04.550527Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-11T11:48:04.550514Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d --rgw-realm india --system on 10.0.195.166",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "21e86bce636c3aa0",
+                        "secret_key": "cf764951f1fdde5d",
+                        "active": true,
+                        "create_date": "2024-10-10T21:43:36.259192Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-10T21:43:36.259180Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d --rgw-realm india --system on 10.0.195.189",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "21e86bce636c3aa0",
+                        "secret_key": "cf764951f1fdde5d",
+                        "active": true,
+                        "create_date": "2024-10-10T21:44:32.709534Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-10T21:44:32.709521Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key colocate123 --secret colocate123 --rgw-realm india --system on 10.0.195.117",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "colocate123",
+                        "secret_key": "colocate123",
+                        "active": true,
+                        "create_date": "2024-10-11T16:16:39.281433Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-11T16:16:39.281421Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d --rgw-realm india --system on 10.0.195.146",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "21e86bce636c3aa0",
+                        "secret_key": "cf764951f1fdde5d",
+                        "active": true,
+                        "create_date": "2024-10-11T07:53:43.409416Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-11T07:53:43.409404Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key 3way123 --secret 3way123 --rgw-realm india --system on 10.0.195.55",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "3way123",
+                        "secret_key": "3way123",
+                        "active": true,
+                        "create_date": "2024-10-11T08:03:56.602925Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-11T08:03:56.602910Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d --rgw-realm india --system on 10.0.195.62",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "21e86bce636c3aa0",
+                        "secret_key": "cf764951f1fdde5d",
+                        "active": true,
+                        "create_date": "2024-10-11T11:48:04.550527Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-11T11:48:04.550514Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d --rgw-realm india --system on 10.0.195.166",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "21e86bce636c3aa0",
+                        "secret_key": "cf764951f1fdde5d",
+                        "active": true,
+                        "create_date": "2024-10-10T21:43:36.259192Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-10T21:43:36.259180Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d --rgw-realm india --system on 10.0.195.189",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "21e86bce636c3aa0",
+                        "secret_key": "cf764951f1fdde5d",
+                        "active": true,
+                        "create_date": "2024-10-10T21:44:32.709534Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-10T21:44:32.709521Z",
+                "tags": [],
+                "group_ids": []
+            }
+        },
+        {
+            "command": "radosgw-admin user create --uid=repuser --display_name='Replication user' --access-key colocate123 --secret colocate123 --rgw-realm india --system on 10.0.195.117",
+            "output": {
+                "user_id": "repuser",
+                "display_name": "Replication user",
+                "email": "",
+                "suspended": 0,
+                "max_buckets": 1000,
+                "subusers": [],
+                "keys": [
+                    {
+                        "user": "repuser",
+                        "access_key": "colocate123",
+                        "secret_key": "colocate123",
+                        "active": true,
+                        "create_date": "2024-10-11T16:16:39.281433Z"
+                    }
+                ],
+                "swift_keys": [],
+                "caps": [],
+                "op_mask": "read, write, delete",
+                "system": true,
+                "default_placement": "",
+                "default_storage_class": "",
+                "placement_tags": [],
+                "bucket_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "user_quota": {
+                    "enabled": false,
+                    "check_on_raw": false,
+                    "max_size": -1,
+                    "max_size_kb": 0,
+                    "max_objects": -1
+                },
+                "temp_url_keys": [],
+                "type": "rgw",
+                "mfa_ids": [],
+                "account_id": "",
+                "path": "/",
+                "create_date": "2024-10-11T16:16:39.281421Z",
+                "tags": [],
+                "group_ids": []
+            }
+        }
+    ]
+}

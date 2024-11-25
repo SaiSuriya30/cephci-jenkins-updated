@@ -1,0 +1,3313 @@
+{
+    "ceph_version": "19.2.0-12",
+    "outputs": [
+        {
+            "command": "radosgw-admin period update --rgw-realm india --commit on 10.0.195.146",
+            "output": {
+                "id": "27bf81b9-6139-4652-a3a5-f6919d65fd79",
+                "epoch": 2,
+                "predecessor_uuid": "a11b242b-ab56-4dbc-9a06-25b62f212bc2",
+                "sync_status": [],
+                "period_map": {
+                    "id": "27bf81b9-6139-4652-a3a5-f6919d65fd79",
+                    "zonegroups": [
+                        {
+                            "id": "4ecea931-9069-47e5-a012-9d0f347b23fc",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.104:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                            "zones": [
+                                {
+                                    "id": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.104:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                            "val": 3780035610
+                        }
+                    ]
+                },
+                "master_zonegroup": "4ecea931-9069-47e5-a012-9d0f347b23fc",
+                "master_zone": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.104:80 --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d on 10.0.195.187",
+            "output": {
+                "id": "27bf81b9-6139-4652-a3a5-f6919d65fd79",
+                "epoch": 2,
+                "predecessor_uuid": "a11b242b-ab56-4dbc-9a06-25b62f212bc2",
+                "sync_status": [],
+                "period_map": {
+                    "id": "27bf81b9-6139-4652-a3a5-f6919d65fd79",
+                    "zonegroups": [
+                        {
+                            "id": "4ecea931-9069-47e5-a012-9d0f347b23fc",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.104:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                            "zones": [
+                                {
+                                    "id": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.104:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                            "val": 3780035610
+                        }
+                    ]
+                },
+                "master_zonegroup": "4ecea931-9069-47e5-a012-9d0f347b23fc",
+                "master_zone": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.211:80 --access-key 3way123 --secret 3way123 on 10.0.195.115",
+            "output": {
+                "id": "d8427383-43f5-4e87-9029-a71ee4a17f7a",
+                "epoch": 2,
+                "predecessor_uuid": "efb65673-5c93-410e-956d-6de4e633bf97",
+                "sync_status": [],
+                "period_map": {
+                    "id": "d8427383-43f5-4e87-9029-a71ee4a17f7a",
+                    "zonegroups": [
+                        {
+                            "id": "20eb7abc-7026-4736-9771-73c1014509db",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.211:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                            "zones": [
+                                {
+                                    "id": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.211:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                            "val": 1672040401
+                        }
+                    ]
+                },
+                "master_zonegroup": "20eb7abc-7026-4736-9771-73c1014509db",
+                "master_zone": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.211:80 --access-key 3way123 --secret 3way123 on 10.0.195.221",
+            "output": {
+                "id": "d8427383-43f5-4e87-9029-a71ee4a17f7a",
+                "epoch": 3,
+                "predecessor_uuid": "efb65673-5c93-410e-956d-6de4e633bf97",
+                "sync_status": [],
+                "period_map": {
+                    "id": "d8427383-43f5-4e87-9029-a71ee4a17f7a",
+                    "zonegroups": [
+                        {
+                            "id": "20eb7abc-7026-4736-9771-73c1014509db",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.211:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                            "zones": [
+                                {
+                                    "id": "5fa552b5-13cb-450e-8f67-8fe0f959a292",
+                                    "name": "secondary",
+                                    "endpoints": [
+                                        "http://10.0.195.25:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                },
+                                {
+                                    "id": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.211:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "5fa552b5-13cb-450e-8f67-8fe0f959a292",
+                            "val": 1776361534
+                        },
+                        {
+                            "key": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                            "val": 1672040401
+                        }
+                    ]
+                },
+                "master_zonegroup": "20eb7abc-7026-4736-9771-73c1014509db",
+                "master_zone": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.93:80 --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d on 10.0.195.187",
+            "output": {
+                "id": "361ca1e4-5c93-4983-8dc4-c2ab3ce9a9a2",
+                "epoch": 2,
+                "predecessor_uuid": "184343ae-6815-4a34-862c-043aabaa64be",
+                "sync_status": [],
+                "period_map": {
+                    "id": "361ca1e4-5c93-4983-8dc4-c2ab3ce9a9a2",
+                    "zonegroups": [
+                        {
+                            "id": "c8c40124-fb1a-4ae2-be03-d74cef74824a",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.93:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                            "zones": [
+                                {
+                                    "id": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.93:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "4b596623-6ef5-4ef7-beb9-92292c4f679a",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                            "val": 3163140265
+                        }
+                    ]
+                },
+                "master_zonegroup": "c8c40124-fb1a-4ae2-be03-d74cef74824a",
+                "master_zone": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "4b596623-6ef5-4ef7-beb9-92292c4f679a",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period update --rgw-realm india --commit on 10.0.195.187",
+            "output": {
+                "id": "8de3366c-05a6-4055-94d4-fb77ddf09df7",
+                "epoch": 1,
+                "predecessor_uuid": "361ca1e4-5c93-4983-8dc4-c2ab3ce9a9a2",
+                "sync_status": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "1_1728648323.295119_309.1",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "1_1728648163.610929_189.1",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "1_1728648149.569576_190.1",
+                    "",
+                    "1_1728648166.754703_213.1",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "period_map": {
+                    "id": "8de3366c-05a6-4055-94d4-fb77ddf09df7",
+                    "zonegroups": [
+                        {
+                            "id": "c8c40124-fb1a-4ae2-be03-d74cef74824a",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.93:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "071adb21-4538-47f1-be47-ab1daf67ce1e",
+                            "zones": [
+                                {
+                                    "id": "071adb21-4538-47f1-be47-ab1daf67ce1e",
+                                    "name": "secondary",
+                                    "endpoints": [
+                                        "http://10.0.195.59:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                },
+                                {
+                                    "id": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.93:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "4b596623-6ef5-4ef7-beb9-92292c4f679a",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "071adb21-4538-47f1-be47-ab1daf67ce1e",
+                            "val": 1398640337
+                        },
+                        {
+                            "key": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                            "val": 3163140265
+                        }
+                    ]
+                },
+                "master_zonegroup": "c8c40124-fb1a-4ae2-be03-d74cef74824a",
+                "master_zone": "071adb21-4538-47f1-be47-ab1daf67ce1e",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "4b596623-6ef5-4ef7-beb9-92292c4f679a",
+                "realm_epoch": 3
+            }
+        },
+        {
+            "command": "radosgw-admin period update --rgw-realm india --commit on 10.0.195.166",
+            "output": {
+                "id": "827c7e32-1bee-4d5d-9b3d-26469d0f6d9d",
+                "epoch": 2,
+                "predecessor_uuid": "2ee45908-d1e0-48dc-8bd0-3b8d1cb4a35a",
+                "sync_status": [],
+                "period_map": {
+                    "id": "827c7e32-1bee-4d5d-9b3d-26469d0f6d9d",
+                    "zonegroups": [
+                        {
+                            "id": "62ec9674-9caa-4812-9a16-16e23d1dc6a6",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.86:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                            "zones": [
+                                {
+                                    "id": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.86:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "304d3295-7d13-447b-8222-ce4afe653d26",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                            "val": 2233771590
+                        }
+                    ]
+                },
+                "master_zonegroup": "62ec9674-9caa-4812-9a16-16e23d1dc6a6",
+                "master_zone": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "304d3295-7d13-447b-8222-ce4afe653d26",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.86:80 --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d on 10.0.195.114",
+            "output": {
+                "id": "827c7e32-1bee-4d5d-9b3d-26469d0f6d9d",
+                "epoch": 2,
+                "predecessor_uuid": "2ee45908-d1e0-48dc-8bd0-3b8d1cb4a35a",
+                "sync_status": [],
+                "period_map": {
+                    "id": "827c7e32-1bee-4d5d-9b3d-26469d0f6d9d",
+                    "zonegroups": [
+                        {
+                            "id": "62ec9674-9caa-4812-9a16-16e23d1dc6a6",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.86:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                            "zones": [
+                                {
+                                    "id": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.86:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "304d3295-7d13-447b-8222-ce4afe653d26",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                            "val": 2233771590
+                        }
+                    ]
+                },
+                "master_zonegroup": "62ec9674-9caa-4812-9a16-16e23d1dc6a6",
+                "master_zone": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "304d3295-7d13-447b-8222-ce4afe653d26",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.205:80 --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d on 10.0.195.220",
+            "output": {
+                "id": "c2853c96-c2ad-49c1-8e8e-e6747ec9739b",
+                "epoch": 2,
+                "predecessor_uuid": "b0ca2c81-6783-405f-9dd3-bdf0c5f068d2",
+                "sync_status": [],
+                "period_map": {
+                    "id": "c2853c96-c2ad-49c1-8e8e-e6747ec9739b",
+                    "zonegroups": [
+                        {
+                            "id": "568f8d95-25f2-44ae-910d-78196f3125b6",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.205:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "f0948616-05ed-4405-96cf-0415742bd0f9",
+                            "zones": [
+                                {
+                                    "id": "f0948616-05ed-4405-96cf-0415742bd0f9",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.205:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "9124bc0d-6c47-445a-8389-c94540f538ec",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "f0948616-05ed-4405-96cf-0415742bd0f9",
+                            "val": 3132472136
+                        }
+                    ]
+                },
+                "master_zonegroup": "568f8d95-25f2-44ae-910d-78196f3125b6",
+                "master_zone": "f0948616-05ed-4405-96cf-0415742bd0f9",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "9124bc0d-6c47-445a-8389-c94540f538ec",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.216:80 --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d on 10.0.195.192",
+            "output": {
+                "id": "64b1f571-d3a9-40a9-89e3-be6b8208929b",
+                "epoch": 2,
+                "predecessor_uuid": "cb309814-f7f1-44ae-ae4e-2d065e5f1cd2",
+                "sync_status": [],
+                "period_map": {
+                    "id": "64b1f571-d3a9-40a9-89e3-be6b8208929b",
+                    "zonegroups": [
+                        {
+                            "id": "3d58bd46-f732-4850-89aa-f4f97f39050b",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.216:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "9ca112eb-ad4f-4943-9922-138cc3096592",
+                            "zones": [
+                                {
+                                    "id": "9ca112eb-ad4f-4943-9922-138cc3096592",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.216:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "e9384cee-8987-4237-b6c2-a8a5bfb56496",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "9ca112eb-ad4f-4943-9922-138cc3096592",
+                            "val": 1982237169
+                        }
+                    ]
+                },
+                "master_zonegroup": "3d58bd46-f732-4850-89aa-f4f97f39050b",
+                "master_zone": "9ca112eb-ad4f-4943-9922-138cc3096592",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "e9384cee-8987-4237-b6c2-a8a5bfb56496",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.130:80 --access-key colocate123 --secret colocate123 on 10.0.195.65",
+            "output": {
+                "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                "epoch": 2,
+                "predecessor_uuid": "15191cfd-1695-41e2-b951-a7d0d11bcdcf",
+                "sync_status": [],
+                "period_map": {
+                    "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                    "zonegroups": [
+                        {
+                            "id": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.130:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "zones": [
+                                {
+                                    "id": "9079ebf6-802d-4690-8762-a5018bfada62",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.130:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "val": 2443657879
+                        }
+                    ]
+                },
+                "master_zonegroup": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.130:80 --access-key colocate123 --secret colocate123 on 10.0.195.117",
+            "output": {
+                "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                "epoch": 3,
+                "predecessor_uuid": "15191cfd-1695-41e2-b951-a7d0d11bcdcf",
+                "sync_status": [],
+                "period_map": {
+                    "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                    "zonegroups": [
+                        {
+                            "id": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.130:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "zones": [
+                                {
+                                    "id": "35decb32-e758-47df-9021-c4c1f99431ec",
+                                    "name": "secondary",
+                                    "endpoints": [
+                                        "http://10.0.195.51:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                },
+                                {
+                                    "id": "9079ebf6-802d-4690-8762-a5018bfada62",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.130:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "35decb32-e758-47df-9021-c4c1f99431ec",
+                            "val": 3689461065
+                        },
+                        {
+                            "key": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "val": 2443657879
+                        }
+                    ]
+                },
+                "master_zonegroup": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period update --rgw-realm india --commit on 10.0.195.117",
+            "output": {
+                "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                "epoch": 4,
+                "predecessor_uuid": "15191cfd-1695-41e2-b951-a7d0d11bcdcf",
+                "sync_status": [],
+                "period_map": {
+                    "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                    "zonegroups": [
+                        {
+                            "id": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.130:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "zones": [
+                                {
+                                    "id": "35decb32-e758-47df-9021-c4c1f99431ec",
+                                    "name": "secondary",
+                                    "endpoints": [
+                                        "http://10.0.195.51:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                },
+                                {
+                                    "id": "7ded4556-8233-434e-a687-e25691fb6074",
+                                    "name": "archive",
+                                    "endpoints": [
+                                        "http://10.0.195.64:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "archive",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                },
+                                {
+                                    "id": "9079ebf6-802d-4690-8762-a5018bfada62",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.130:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "35decb32-e758-47df-9021-c4c1f99431ec",
+                            "val": 3689461065
+                        },
+                        {
+                            "key": "7ded4556-8233-434e-a687-e25691fb6074",
+                            "val": 3541117127
+                        },
+                        {
+                            "key": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "val": 2443657879
+                        }
+                    ]
+                },
+                "master_zonegroup": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period update --rgw-realm india --commit on 10.0.195.146",
+            "output": {
+                "id": "27bf81b9-6139-4652-a3a5-f6919d65fd79",
+                "epoch": 2,
+                "predecessor_uuid": "a11b242b-ab56-4dbc-9a06-25b62f212bc2",
+                "sync_status": [],
+                "period_map": {
+                    "id": "27bf81b9-6139-4652-a3a5-f6919d65fd79",
+                    "zonegroups": [
+                        {
+                            "id": "4ecea931-9069-47e5-a012-9d0f347b23fc",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.104:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                            "zones": [
+                                {
+                                    "id": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.104:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                            "val": 3780035610
+                        }
+                    ]
+                },
+                "master_zonegroup": "4ecea931-9069-47e5-a012-9d0f347b23fc",
+                "master_zone": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.104:80 --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d on 10.0.195.187",
+            "output": {
+                "id": "27bf81b9-6139-4652-a3a5-f6919d65fd79",
+                "epoch": 2,
+                "predecessor_uuid": "a11b242b-ab56-4dbc-9a06-25b62f212bc2",
+                "sync_status": [],
+                "period_map": {
+                    "id": "27bf81b9-6139-4652-a3a5-f6919d65fd79",
+                    "zonegroups": [
+                        {
+                            "id": "4ecea931-9069-47e5-a012-9d0f347b23fc",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.104:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                            "zones": [
+                                {
+                                    "id": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.104:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                            "val": 3780035610
+                        }
+                    ]
+                },
+                "master_zonegroup": "4ecea931-9069-47e5-a012-9d0f347b23fc",
+                "master_zone": "03ae4583-1bc1-4210-947d-1ecff69e0086",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.211:80 --access-key 3way123 --secret 3way123 on 10.0.195.115",
+            "output": {
+                "id": "d8427383-43f5-4e87-9029-a71ee4a17f7a",
+                "epoch": 2,
+                "predecessor_uuid": "efb65673-5c93-410e-956d-6de4e633bf97",
+                "sync_status": [],
+                "period_map": {
+                    "id": "d8427383-43f5-4e87-9029-a71ee4a17f7a",
+                    "zonegroups": [
+                        {
+                            "id": "20eb7abc-7026-4736-9771-73c1014509db",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.211:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                            "zones": [
+                                {
+                                    "id": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.211:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                            "val": 1672040401
+                        }
+                    ]
+                },
+                "master_zonegroup": "20eb7abc-7026-4736-9771-73c1014509db",
+                "master_zone": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.211:80 --access-key 3way123 --secret 3way123 on 10.0.195.221",
+            "output": {
+                "id": "d8427383-43f5-4e87-9029-a71ee4a17f7a",
+                "epoch": 3,
+                "predecessor_uuid": "efb65673-5c93-410e-956d-6de4e633bf97",
+                "sync_status": [],
+                "period_map": {
+                    "id": "d8427383-43f5-4e87-9029-a71ee4a17f7a",
+                    "zonegroups": [
+                        {
+                            "id": "20eb7abc-7026-4736-9771-73c1014509db",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.211:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                            "zones": [
+                                {
+                                    "id": "5fa552b5-13cb-450e-8f67-8fe0f959a292",
+                                    "name": "secondary",
+                                    "endpoints": [
+                                        "http://10.0.195.25:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                },
+                                {
+                                    "id": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.211:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "5fa552b5-13cb-450e-8f67-8fe0f959a292",
+                            "val": 1776361534
+                        },
+                        {
+                            "key": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                            "val": 1672040401
+                        }
+                    ]
+                },
+                "master_zonegroup": "20eb7abc-7026-4736-9771-73c1014509db",
+                "master_zone": "eb2c453f-136e-47b4-9164-fde48f12a418",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.93:80 --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d on 10.0.195.187",
+            "output": {
+                "id": "361ca1e4-5c93-4983-8dc4-c2ab3ce9a9a2",
+                "epoch": 2,
+                "predecessor_uuid": "184343ae-6815-4a34-862c-043aabaa64be",
+                "sync_status": [],
+                "period_map": {
+                    "id": "361ca1e4-5c93-4983-8dc4-c2ab3ce9a9a2",
+                    "zonegroups": [
+                        {
+                            "id": "c8c40124-fb1a-4ae2-be03-d74cef74824a",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.93:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                            "zones": [
+                                {
+                                    "id": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.93:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "4b596623-6ef5-4ef7-beb9-92292c4f679a",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                            "val": 3163140265
+                        }
+                    ]
+                },
+                "master_zonegroup": "c8c40124-fb1a-4ae2-be03-d74cef74824a",
+                "master_zone": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "4b596623-6ef5-4ef7-beb9-92292c4f679a",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period update --rgw-realm india --commit on 10.0.195.187",
+            "output": {
+                "id": "8de3366c-05a6-4055-94d4-fb77ddf09df7",
+                "epoch": 1,
+                "predecessor_uuid": "361ca1e4-5c93-4983-8dc4-c2ab3ce9a9a2",
+                "sync_status": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "1_1728648323.295119_309.1",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "1_1728648163.610929_189.1",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "1_1728648149.569576_190.1",
+                    "",
+                    "1_1728648166.754703_213.1",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "period_map": {
+                    "id": "8de3366c-05a6-4055-94d4-fb77ddf09df7",
+                    "zonegroups": [
+                        {
+                            "id": "c8c40124-fb1a-4ae2-be03-d74cef74824a",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.93:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "071adb21-4538-47f1-be47-ab1daf67ce1e",
+                            "zones": [
+                                {
+                                    "id": "071adb21-4538-47f1-be47-ab1daf67ce1e",
+                                    "name": "secondary",
+                                    "endpoints": [
+                                        "http://10.0.195.59:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                },
+                                {
+                                    "id": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.93:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "4b596623-6ef5-4ef7-beb9-92292c4f679a",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "071adb21-4538-47f1-be47-ab1daf67ce1e",
+                            "val": 1398640337
+                        },
+                        {
+                            "key": "7a9541bb-dd0c-4cce-a810-ed5a316f9e27",
+                            "val": 3163140265
+                        }
+                    ]
+                },
+                "master_zonegroup": "c8c40124-fb1a-4ae2-be03-d74cef74824a",
+                "master_zone": "071adb21-4538-47f1-be47-ab1daf67ce1e",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "4b596623-6ef5-4ef7-beb9-92292c4f679a",
+                "realm_epoch": 3
+            }
+        },
+        {
+            "command": "radosgw-admin period update --rgw-realm india --commit on 10.0.195.166",
+            "output": {
+                "id": "827c7e32-1bee-4d5d-9b3d-26469d0f6d9d",
+                "epoch": 2,
+                "predecessor_uuid": "2ee45908-d1e0-48dc-8bd0-3b8d1cb4a35a",
+                "sync_status": [],
+                "period_map": {
+                    "id": "827c7e32-1bee-4d5d-9b3d-26469d0f6d9d",
+                    "zonegroups": [
+                        {
+                            "id": "62ec9674-9caa-4812-9a16-16e23d1dc6a6",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.86:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                            "zones": [
+                                {
+                                    "id": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.86:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "304d3295-7d13-447b-8222-ce4afe653d26",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                            "val": 2233771590
+                        }
+                    ]
+                },
+                "master_zonegroup": "62ec9674-9caa-4812-9a16-16e23d1dc6a6",
+                "master_zone": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "304d3295-7d13-447b-8222-ce4afe653d26",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.86:80 --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d on 10.0.195.114",
+            "output": {
+                "id": "827c7e32-1bee-4d5d-9b3d-26469d0f6d9d",
+                "epoch": 2,
+                "predecessor_uuid": "2ee45908-d1e0-48dc-8bd0-3b8d1cb4a35a",
+                "sync_status": [],
+                "period_map": {
+                    "id": "827c7e32-1bee-4d5d-9b3d-26469d0f6d9d",
+                    "zonegroups": [
+                        {
+                            "id": "62ec9674-9caa-4812-9a16-16e23d1dc6a6",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.86:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                            "zones": [
+                                {
+                                    "id": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.86:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "304d3295-7d13-447b-8222-ce4afe653d26",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                            "val": 2233771590
+                        }
+                    ]
+                },
+                "master_zonegroup": "62ec9674-9caa-4812-9a16-16e23d1dc6a6",
+                "master_zone": "bdb6c4f9-2e2f-477c-8197-b5f0f10c2232",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "304d3295-7d13-447b-8222-ce4afe653d26",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.205:80 --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d on 10.0.195.220",
+            "output": {
+                "id": "c2853c96-c2ad-49c1-8e8e-e6747ec9739b",
+                "epoch": 2,
+                "predecessor_uuid": "b0ca2c81-6783-405f-9dd3-bdf0c5f068d2",
+                "sync_status": [],
+                "period_map": {
+                    "id": "c2853c96-c2ad-49c1-8e8e-e6747ec9739b",
+                    "zonegroups": [
+                        {
+                            "id": "568f8d95-25f2-44ae-910d-78196f3125b6",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.205:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "f0948616-05ed-4405-96cf-0415742bd0f9",
+                            "zones": [
+                                {
+                                    "id": "f0948616-05ed-4405-96cf-0415742bd0f9",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.205:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "9124bc0d-6c47-445a-8389-c94540f538ec",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "f0948616-05ed-4405-96cf-0415742bd0f9",
+                            "val": 3132472136
+                        }
+                    ]
+                },
+                "master_zonegroup": "568f8d95-25f2-44ae-910d-78196f3125b6",
+                "master_zone": "f0948616-05ed-4405-96cf-0415742bd0f9",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "9124bc0d-6c47-445a-8389-c94540f538ec",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.216:80 --access-key 21e86bce636c3aa0 --secret cf764951f1fdde5d on 10.0.195.192",
+            "output": {
+                "id": "64b1f571-d3a9-40a9-89e3-be6b8208929b",
+                "epoch": 2,
+                "predecessor_uuid": "cb309814-f7f1-44ae-ae4e-2d065e5f1cd2",
+                "sync_status": [],
+                "period_map": {
+                    "id": "64b1f571-d3a9-40a9-89e3-be6b8208929b",
+                    "zonegroups": [
+                        {
+                            "id": "3d58bd46-f732-4850-89aa-f4f97f39050b",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.216:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "9ca112eb-ad4f-4943-9922-138cc3096592",
+                            "zones": [
+                                {
+                                    "id": "9ca112eb-ad4f-4943-9922-138cc3096592",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.216:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "e9384cee-8987-4237-b6c2-a8a5bfb56496",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "9ca112eb-ad4f-4943-9922-138cc3096592",
+                            "val": 1982237169
+                        }
+                    ]
+                },
+                "master_zonegroup": "3d58bd46-f732-4850-89aa-f4f97f39050b",
+                "master_zone": "9ca112eb-ad4f-4943-9922-138cc3096592",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "e9384cee-8987-4237-b6c2-a8a5bfb56496",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.130:80 --access-key colocate123 --secret colocate123 on 10.0.195.65",
+            "output": {
+                "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                "epoch": 2,
+                "predecessor_uuid": "15191cfd-1695-41e2-b951-a7d0d11bcdcf",
+                "sync_status": [],
+                "period_map": {
+                    "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                    "zonegroups": [
+                        {
+                            "id": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.130:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "zones": [
+                                {
+                                    "id": "9079ebf6-802d-4690-8762-a5018bfada62",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.130:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": false,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "val": 2443657879
+                        }
+                    ]
+                },
+                "master_zonegroup": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period pull --url http://10.0.195.130:80 --access-key colocate123 --secret colocate123 on 10.0.195.117",
+            "output": {
+                "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                "epoch": 3,
+                "predecessor_uuid": "15191cfd-1695-41e2-b951-a7d0d11bcdcf",
+                "sync_status": [],
+                "period_map": {
+                    "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                    "zonegroups": [
+                        {
+                            "id": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.130:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "zones": [
+                                {
+                                    "id": "35decb32-e758-47df-9021-c4c1f99431ec",
+                                    "name": "secondary",
+                                    "endpoints": [
+                                        "http://10.0.195.51:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                },
+                                {
+                                    "id": "9079ebf6-802d-4690-8762-a5018bfada62",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.130:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "35decb32-e758-47df-9021-c4c1f99431ec",
+                            "val": 3689461065
+                        },
+                        {
+                            "key": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "val": 2443657879
+                        }
+                    ]
+                },
+                "master_zonegroup": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                "realm_epoch": 2
+            }
+        },
+        {
+            "command": "radosgw-admin period update --rgw-realm india --commit on 10.0.195.117",
+            "output": {
+                "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                "epoch": 4,
+                "predecessor_uuid": "15191cfd-1695-41e2-b951-a7d0d11bcdcf",
+                "sync_status": [],
+                "period_map": {
+                    "id": "f0b6f504-835a-400e-8382-57f032f646e6",
+                    "zonegroups": [
+                        {
+                            "id": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                            "name": "shared",
+                            "api_name": "shared",
+                            "is_master": true,
+                            "endpoints": [
+                                "http://10.0.195.130:80"
+                            ],
+                            "hostnames": [],
+                            "hostnames_s3website": [],
+                            "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "zones": [
+                                {
+                                    "id": "35decb32-e758-47df-9021-c4c1f99431ec",
+                                    "name": "secondary",
+                                    "endpoints": [
+                                        "http://10.0.195.51:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                },
+                                {
+                                    "id": "7ded4556-8233-434e-a687-e25691fb6074",
+                                    "name": "archive",
+                                    "endpoints": [
+                                        "http://10.0.195.64:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "archive",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                },
+                                {
+                                    "id": "9079ebf6-802d-4690-8762-a5018bfada62",
+                                    "name": "primary",
+                                    "endpoints": [
+                                        "http://10.0.195.130:80"
+                                    ],
+                                    "log_meta": false,
+                                    "log_data": true,
+                                    "bucket_index_max_shards": 11,
+                                    "read_only": false,
+                                    "tier_type": "",
+                                    "sync_from_all": true,
+                                    "sync_from": [],
+                                    "redirect_zone": "",
+                                    "supported_features": [
+                                        "compress-encrypted",
+                                        "notification_v2",
+                                        "resharding"
+                                    ]
+                                }
+                            ],
+                            "placement_targets": [
+                                {
+                                    "name": "default-placement",
+                                    "tags": [],
+                                    "storage_classes": [
+                                        "STANDARD"
+                                    ]
+                                }
+                            ],
+                            "default_placement": "default-placement",
+                            "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                            "sync_policy": {
+                                "groups": []
+                            },
+                            "enabled_features": [
+                                "notification_v2",
+                                "resharding"
+                            ]
+                        }
+                    ],
+                    "short_zone_ids": [
+                        {
+                            "key": "35decb32-e758-47df-9021-c4c1f99431ec",
+                            "val": 3689461065
+                        },
+                        {
+                            "key": "7ded4556-8233-434e-a687-e25691fb6074",
+                            "val": 3541117127
+                        },
+                        {
+                            "key": "9079ebf6-802d-4690-8762-a5018bfada62",
+                            "val": 2443657879
+                        }
+                    ]
+                },
+                "master_zonegroup": "5e01357b-2960-41ce-8da7-e77f62f82d71",
+                "master_zone": "9079ebf6-802d-4690-8762-a5018bfada62",
+                "period_config": {
+                    "bucket_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_quota": {
+                        "enabled": false,
+                        "check_on_raw": false,
+                        "max_size": -1,
+                        "max_size_kb": 0,
+                        "max_objects": -1
+                    },
+                    "user_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "bucket_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    },
+                    "anonymous_ratelimit": {
+                        "max_read_ops": 0,
+                        "max_write_ops": 0,
+                        "max_read_bytes": 0,
+                        "max_write_bytes": 0,
+                        "enabled": false
+                    }
+                },
+                "realm_id": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                "realm_epoch": 2
+            }
+        }
+    ]
+}

@@ -1,0 +1,257 @@
+{
+    "ceph_version": "19.2.0-12",
+    "outputs": [
+        {
+            "command": "radosgw-admin sync status on 10.0.195.146",
+            "output": {
+                "default_info": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.187",
+            "output": {
+                "default_info": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.55",
+            "output": {
+                "default_info": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.115",
+            "output": {
+                "default_info": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.221",
+            "output": {
+                "default_info": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.62",
+            "output": {
+                "default_info": "4b596623-6ef5-4ef7-beb9-92292c4f679a",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.166",
+            "output": {
+                "default_info": "304d3295-7d13-447b-8222-ce4afe653d26",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.114",
+            "output": {
+                "default_info": "304d3295-7d13-447b-8222-ce4afe653d26",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.89",
+            "output": {
+                "default_info": "9124bc0d-6c47-445a-8389-c94540f538ec",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.220",
+            "output": {
+                "default_info": "9124bc0d-6c47-445a-8389-c94540f538ec",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.189",
+            "output": {
+                "default_info": "e9384cee-8987-4237-b6c2-a8a5bfb56496",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.192",
+            "output": {
+                "default_info": "e9384cee-8987-4237-b6c2-a8a5bfb56496",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.117",
+            "output": {
+                "default_info": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.65",
+            "output": {
+                "default_info": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.146",
+            "output": {
+                "default_info": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.187",
+            "output": {
+                "default_info": "0280dfc1-a5dd-4eee-9441-6971be9595f4",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.55",
+            "output": {
+                "default_info": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.115",
+            "output": {
+                "default_info": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.221",
+            "output": {
+                "default_info": "649a59a7-249d-4fa6-b479-af06f8c4970c",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.62",
+            "output": {
+                "default_info": "4b596623-6ef5-4ef7-beb9-92292c4f679a",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.166",
+            "output": {
+                "default_info": "304d3295-7d13-447b-8222-ce4afe653d26",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.114",
+            "output": {
+                "default_info": "304d3295-7d13-447b-8222-ce4afe653d26",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.89",
+            "output": {
+                "default_info": "9124bc0d-6c47-445a-8389-c94540f538ec",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.220",
+            "output": {
+                "default_info": "9124bc0d-6c47-445a-8389-c94540f538ec",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.189",
+            "output": {
+                "default_info": "e9384cee-8987-4237-b6c2-a8a5bfb56496",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.192",
+            "output": {
+                "default_info": "e9384cee-8987-4237-b6c2-a8a5bfb56496",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.117",
+            "output": {
+                "default_info": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                "realms": [
+                    "india"
+                ]
+            }
+        },
+        {
+            "command": "radosgw-admin sync status on 10.0.195.65",
+            "output": {
+                "default_info": "cd7bcf01-ee22-449c-92ef-79faf7c230a7",
+                "realms": [
+                    "india"
+                ]
+            }
+        }
+    ]
+}
